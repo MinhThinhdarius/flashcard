@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sổ tay</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/5fe5d56a02.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      margin: 0;
+      background-color: #fffde0;
+    }
+    .row{
+      margin: auto auto;
+      margin-top: 80px;
+    }
+      .left{
+        /*margin-left: 200px;*/
+        max-width: 40%;
+        color: #bc572f;
+        font-family: Arial,sans-serif;
+        font-size: 30px;
+        font-weight: bold;
+      }
+      .btn.dropdown-toggle{
+        padding-left: 40px;
+        text-align: left;
+        font-family: Arial,sans-serif;
+        font-size: 30px;
+        font-weight: bold;
+        width: 352px;
+        background-color: #cae9bc;
+        margin-bottom: 50px;
+        border-radius: 10px;
+      }
+      ul.dropdown-menu{
+        font-size: 25px;
+        border-radius: 10px;
+        margin-top: -40px;
+        width: 350px;
+      }
+      .right{
+        max-width: 50%;
+        border-left: 3px solid black;
+        margin-left: 30px;
+      }
+      .find{
+        background-color: #cae9bc;
+        border-radius: 10px;
+        padding: 6px;
+      }
+
+      .find input{
+        color: #bc572f;
+        padding-left: 34px;
+        width: 270px;
+        background-color: #cae9bc;
+        border: none;
+        border-radius: 10px;
+      }
+    .find ::placeholder{
+      color: #bc572f;
+    }
+    .find .icon {
+      padding-left: 10px;
+      color: #bc572f;
+      border-left: 3px solid #bc572f;
+    }
+    .txt{
+      padding:4px 40px 0.1px;
+      text-align: left;
+      font-family: Arial,sans-serif;
+      font-size: 30px;
+      background-color: #cae9bc;
+      border-radius: 10px;
+      margin-left: 30px;
+      margin-bottom: 20px;
+    }
+    .txt .txt-bonus{
+      font-size: 14px;
+    }
+    .txt .txt-bonus p{
+      margin-bottom: 2px;
+      margin-left: 50px;
+    }
+    .txt .head{
+      border-right: 2px solid black;
+      padding: 10px 0px;
+      height: 60px;
+    }
+    .img img{
+      width: 50%;
+      border-radius: 5px;
+      margin: 470px 0px 0px 20px;
+    }
+    .square {
+      margin: 50px 0px 0px 30px;
+      width: 250px;
+      height: 248px;
+      display: inline-block;
+      border: 1px solid black;
+    }
+    table {
+      border-collapse: collapse;
+    }
+    td {
+      background-color: #cae9bc;
+      border: 1px solid black;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      vertical-align: middle;
+      padding: 8.9px 13.9px;
+    }
+    td:hover{
+      background-color: rgba(202, 233, 188, 0.7);
+      color: rgba(188, 87, 47, 0.8);
+    }
+    button {
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+    .luuy{
+      color: black;
+      font-style: italic;
+      font-size: 14px;
+      margin-left: 30px;
+    }
+  </style>
+</head>
+<body>
+    <div class="row">
+      <div class="col-lg-2">
+        <div class="img">
+          <a href="menu.html"> <img src="img/img.png" alt=""></a>
+        </div>
+      </div>
+      <div class="col-lg-3 left">
+        <div class="dropdown">
+          <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Thành ngữ
+            <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a href="#">Cơ bản</a></li>
+            <li><a href="#">Phức tạp</a></li>
+            <li><a href="#">Nâng cao</a></li>
+          </ul>
+        </div>
+
+        <div class="dropdown">
+          <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Flash card
+            <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a href="#">Cơ bản</a></li>
+            <li><a href="#">Phức tạp</a></li>
+            <li><a href="#">Nâng cao</a></li>
+          </ul>
+        </div>
+
+        <div class="find">
+          <input type="text" name="" id="" placeholder="Thanh tìm kiếm">
+          <a href="" class="icon">
+          <i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+        <div class="square">
+          <table>
+            <tbody>
+            <tr>
+              <td><button>1</button></td>
+              <td><button>2</button></td>
+              <td><button>3</button></td>
+              <td><button>4</button></td>
+            </tr>
+            <tr>
+              <td><button>5</button></td>
+              <td><button>6</button></td>
+              <td><button>7</button></td>
+              <td><button>8</button></td>
+            </tr>
+            <tr>
+              <td><button>9</button></td>
+              <td><button>10</button></td>
+              <td><button>11</button></td>
+              <td><button>12</button></td>
+            </tr>
+            <tr>
+              <td><button>13</button></td>
+              <td><button>14</button></td>
+              <td><button>15</button></td>
+              <td><button>16</button></td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="luuy">* Chọn mục bài tập</p>
+      </div>
+      <div class="col-lg-7 right">
+        <a href="sotaydetail.html">
+          <div class="txt">
+          <div class="row" style="margin-top: 5px">
+            <div class="col-lg-2 head">
+              Z
+            </div>
+            <div class="col-lg-10 txt-bonus">
+              <p style="font-size: 18px">知足常乐 <a href="" style="color: black!important;margin-left: 10px"><i class="fa-solid fa-volume-high"></i></a></p>
+              <p>zhī zú cháng lè</p>
+              <p style="margin-left: 0px">人没有过多的要求就能时常觉得满</p>
+            </div>
+          </div>
+        </div></a>
+        <a href="sotaydetail.html">
+          <div class="txt">
+          <div class="row" style="margin-top: 5px">
+            <div class="col-lg-2 head">
+              Z
+            </div>
+            <div class="col-lg-10 txt-bonus">
+              <p style="font-size: 18px">知足常乐 <a href="" style="color: black!important;margin-left: 10px"><i class="fa-solid fa-volume-high"></i></a></p>
+              <p>zhī zú cháng lè</p>
+              <p style="margin-left: 0px">人没有过多的要求就能时常觉得满</p>
+            </div>
+          </div>
+        </div></a>
+        <a href="sotaydetail.html">
+          <div class="txt">
+          <div class="row" style="margin-top: 5px">
+            <div class="col-lg-2 head">
+              Z
+            </div>
+            <div class="col-lg-10 txt-bonus">
+              <p style="font-size: 18px">知足常乐 <a href="sotaydetai.html" style="color: black!important;margin-left: 10px"><i class="fa-solid fa-volume-high"></i></a></p>
+              <p>zhī zú cháng lè</p>
+              <p style="margin-left: 0px">人没有过多的要求就能时常觉得满</p>
+            </div>
+          </div>
+        </div></a>
+        <a href="sotaydetail.html">
+          <div class="txt">
+          <div class="row" style="margin-top: 5px">
+            <div class="col-lg-2 head">
+              Z
+            </div>
+            <div class="col-lg-10 txt-bonus">
+              <p style="font-size: 18px">知足常乐 <a href="" style="color: black!important;margin-left: 10px"><i class="fa-solid fa-volume-high"></i></a></p>
+              <p>zhī zú cháng lè</p>
+              <p style="margin-left: 0px">人没有过多的要求就能时常觉得满</p>
+            </div>
+          </div>
+        </div></a>
+        <a href="sotaydetail.html">
+          <div class="txt">
+          <div class="row" style="margin-top: 5px">
+            <div class="col-lg-2 head">
+              Z
+            </div>
+            <div class="col-lg-10 txt-bonus">
+              <p style="font-size: 18px">知足常乐 <a href="" style="color: black!important;margin-left: 10px"><i class="fa-solid fa-volume-high"></i></a></p>
+              <p>zhī zú cháng lè</p>
+              <p style="margin-left: 0px">人没有过多的要求就能时常觉得满</p>
+            </div>
+          </div>
+        </div></a>
+        <a href="sotaydetail.html">
+          <div class="txt">
+          <div class="row" style="margin-top: 5px">
+            <div class="col-lg-2 head">
+              Z
+            </div>
+            <div class="col-lg-10 txt-bonus">
+              <p style="font-size: 18px">知足常乐 <a href="" style="color: black!important;margin-left: 10px"><i class="fa-solid fa-volume-high"></i></a></p>
+              <p>zhī zú cháng lè</p>
+              <p style="margin-left: 0px">人没有过多的要求就能时常觉得满</p>
+            </div>
+          </div>
+        </div></a>
+      </div>
+    </div>
+
+</body>
+</html>
